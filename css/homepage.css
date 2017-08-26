@@ -1,0 +1,595 @@
+
+div{
+    border: 1px solid red;
+}
+
+/*使浏览器头上间隙消失begin*/
+*{margin: 0;}
+/*使浏览器头上间隙消失end*/
+
+/*主体部分begin*/
+#main{
+    margin: 0px,auto;width: 100%;}
+/*主体部分end*/
+
+/*导航部分begin*/
+#header{
+    width:100%;height:9%;background-color:#dcdcdc;position:fixed; /*固定定位*/opacity: 0.7;  /*透明度*/ z-index:1;
+}
+#head-txt{
+    width:90px;
+    position: relative;
+    top:30%;
+    left: 7%;
+    color: white;
+    font-weight: 800;
+}/*导航部分end*/
+
+
+
+/*轮播图begin*/
+#banner {
+    position:relative;width: 100%;height:640px; overflow: hidden;
+}
+/*轮播图文字begin*/
+#banner-text{
+    position:absolute;bottom:140px;margin-left: 90px;
+}
+#txt1{
+    font-size: 18px;color:white;padding-bottom: 20px;opacity: 0.85;
+}#txt2{
+    font-size: 75px;font-weight: 800;color: white;padding-bottom: 10px;width: 650px;height: 126px;line-height: 68px;
+ }
+/*轮播图文字end*/
+#img1{
+    width:1349px; height:100%; float: left; background-image:url("../images/banner01.jpg");background-size: 100% 100%;
+}
+.video{
+    width:1349px; height:100%;float: left;object-fit: fill;
+}
+#content{
+width:5098px;height: 640px;
+}
+#btn{
+    position: absolute;bottom: 60px; margin-left:90px; z-index: 1;
+}
+#btn input{
+    border-radius: 10px;opacity: 0.3;
+}
+/*轮播图end*/
+
+
+
+
+/*图文间隙部分begin*/
+#top_txt{
+    width: 100%; height: 280px;display: flex; align-items:center;justify-content:center ;flex-direction:column;
+}
+/*图文间隙部分end*/
+
+/*图文间隙图的部分begin*/
+#top_txt_image{
+    width: 7%;height: 6px;background-image: url("../images/squiggle.gif");background-size:62%;margin-bottom: 1em;
+}/*图文间隙图的部分end*/
+
+/*图文间隙文的部分begin*/
+#top_txt_text{
+    text-align:center;
+}
+
+#top_txt_text h1{
+    color: gray;opacity: 0.9;
+}
+#top_txt_text p{
+    font-size: 20px;color: #808080;
+}/*图文间隙文的部分end*/
+
+
+
+/*拼图部分begin*/
+#gridwrap{
+    position: relative;width: 100%;height: 1145.94px;
+}/*拼图部分end*/
+
+
+
+#bigdiv1{
+    width: 50%;height:35%;overflow: hidden;left: 0px;top: 0px;position: absolute;
+}
+#inner1{
+    width: 100%;height: 100%;background-image:url("../images/grid01.jpg");background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv1:hover #inner1{ transform:scale(1.05,1.05);transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox1{
+    width:100%;height:4em;bottom: -4em;background-color: black; position: absolute;
+}
+         /*弹框里文本水平、垂直居中begin*/
+.smallbox-p{
+    color: white;font-weight: 600;
+    position: absolute;top: 40%;right: 10%;
+ }      /*弹框里文本水平、垂直居中end*/
+/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv1:hover #smallbox1{
+    bottom: 0em;background-color: black;transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+
+/*十字针形设计begin*/
+#line1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line2{
+    height: 1.5em; width: 0em;bottom: 1.25em; left:2em ; border: 1px solid white;position:absolute;
+}/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv1:hover #line1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv1:hover #line2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+
+
+
+#bigdiv2{
+    width:25%; height:30%; left:50%;top: 0em;position:absolute; overflow: hidden;
+}
+#inner2{
+    width: 100%;height: 100%;background-image:url("../images/grid02.jpg");background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv2:hover #inner2{
+    transform:scale(1.05,1.05);transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox2{
+    width:100%;height:4em;bottom: -4em;background-color: black;position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv2:hover #smallbox2{
+    bottom: 0em;background-color: black;transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+
+/*十字针形设计begin*/
+#line2-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line2-2{
+    height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv2:hover #line2-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv2:hover #line2-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+
+
+#bigdiv3{
+    width: 25%;height: 35%;left: 75%;top: 0em;position: absolute;overflow: hidden;
+}
+#inner3{
+    width: 100%;height: 100%;background-image:url("../images/inner3.png");background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv3:hover #inner3{
+    transform:scale(1.05,1.05);transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox3{
+    width:100%;height:4em;bottom: -4em;background-color: black;position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv3:hover #smallbox3{
+    bottom: 0em;background-color: black;transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+
+/*十字针形设计begin*/
+#line3-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line3-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv3:hover #line3-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv3:hover #line3-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+
+
+#bigdiv4{
+    width: 25%;
+    height:55%;
+    left: 0em;
+    top: 35%;
+    position: absolute;
+    overflow: hidden;
+}
+#inner4{
+    width:100%;
+    height: 100%;
+    background-image:url("../images/inner4.png");
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 10px black ;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv4:hover #inner4{
+    transform:scale(1.05,1.05);
+    transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*十字针形设计begin*/
+#line4-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid black;position:absolute;
+}#line4-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid black;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv4:hover #line4-1{
+    transform:rotate(90deg);transition:all 1s;
+}
+#bigdiv4:hover #line4-2{
+    transform:rotate(90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+
+#bigdiv5{
+    width: 25%;height:35%; left: 25%;top: 35%; position: absolute; overflow:hidden;
+}
+#inner5 {
+    width: 100%; height: 100%; background-image:url("../images/grid03.jpg"); background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv5:hover #inner5{
+    transform:scale(1.05,1.05);
+    transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox5{
+    width:100%; height:4em; bottom: -4em; background-color: black; position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv5:hover #smallbox5{
+    bottom: 0em; background-color: black; transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+
+/*十字针形设计begin*/
+#line5-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line5-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv5:hover #line5-1{
+                      transform:rotate(180deg);transition:all 1s;
+                  }
+#bigdiv5:hover #line5-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+
+#bigdiv6{
+    width: 25%; height: 35%; left:50%; top: 30%; position: absolute; overflow: hidden;
+}
+#inner6 {
+    width:100%; height:100%; background-image:url("../images/grid04.jpg"); background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv6:hover #inner6{
+    transform:scale(1.05,1.05); transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox6{
+    width:100%; height:4em; bottom: -4em; background-color: black; position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv6:hover #smallbox6{
+    bottom: 0em; background-color: black; transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+
+/*十字针形设计begin*/
+#line6-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line6-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv6:hover #line6-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv6:hover #line6-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+#bigdiv7{
+    width:25%; height:35%; left: 75%; top:35%; position: absolute; overflow: hidden;
+}
+#inner7 {
+    width:100%; height:100%; background-image:url("../images/grid05.jpg"); background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv7:hover #inner7{
+    transform:scale(1.05,1.05); transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox7{
+    width:100%;  height:4em; bottom: -4em; background-color: black; position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv7:hover #smallbox7{
+    bottom: 0em; background-color: black; transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+/*十字针形设计begin*/
+#line7-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line7-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv7:hover #line7-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv7:hover #line7-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+#bigdiv8{
+    width: 25%; height:30%; left: 25%; top: 70%; position: absolute; overflow: hidden;
+}
+#inner8 {
+    width: 100%; height:100%; background-image:url("../images/grid06.jpg"); background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv8:hover #inner8{
+    transform:scale(1.05,1.05); transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox8{
+    width:100%; height:4em; bottom: -4em; background-color: black; position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv8:hover #smallbox8{
+    bottom: 0em; background-color: black; transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+/*十字针形设计begin*/
+#line8-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line8-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv8:hover #line8-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv8:hover #line8-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+#bigdiv9{
+    width: 25%; height:35%; left:50%; top:65%; position: absolute; overflow: hidden;
+}
+#inner9{
+    width:100%; height:100%; background-image:url("../images/inner3.png"); background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv9:hover #inner9{
+    transform:scale(1.05,1.05); transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox9{
+    width:100%; height:4em; bottom: -4em; background-color: black; position: absolute;
+}/*拼图底部弹框end*/
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv9:hover #smallbox9{
+    bottom: 0em; background-color: black; transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+/*十字针形设计begin*/
+#line9-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line9-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv9:hover #line9-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv9:hover #line9-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+#bigdiv10{
+    width: 25%; height:30%; left:75%; top:70%; position: absolute; overflow: hidden;
+}
+#inner10{
+    width:100%; height:100%; background-image:url("../images/grid07.jpg"); background-size: 100% 100%;
+}
+/*鼠标悬停放大拼图begin*/
+#bigdiv10:hover #inner10{
+    transform:scale(1.05,1.05); transition:all 0.8s;
+}/*鼠标悬停放大拼图end*/
+
+/*拼图底部弹框begin*/
+#smallbox10{
+    width:100%; height:4em; bottom: -4em; background-color: black; position: absolute;
+}/*拼图底部弹框end*/
+
+
+/*鼠标悬停加载拼图弹框begin*/
+#bigdiv10:hover #smallbox10{
+    bottom: 0em; background-color: black; transition:all 0.6s;
+}/*鼠标悬停加载拼图弹框end*/
+/*十字针形设计begin*/
+#line10-1{
+    width: 1.5em; height: 0em;bottom: 2em; left:1.25em ;border: 1px solid white;position:absolute;
+}#line10-2{
+     height: 1.5em; width: 0em;bottom: 1.25em; left:2em ;border: 1px solid white;position:absolute;
+ }/*十字针形设计end*/
+
+/*鼠标悬停十字针形旋转begin*/
+#bigdiv10:hover #line10-1{
+    transform:rotate(180deg);transition:all 1s;
+}
+#bigdiv10:hover #line10-2{
+    transform:rotate(-90deg);transition:all 1s;
+}/*鼠标悬停十字针形旋转end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*尾部图文间隙begin*/
+#bottom_txt{
+    width: 100%;
+    height: 350px;
+    background-image:url("../images/bridge.jpg");
+    background-size:100% 100%;
+    /*background-repeat: no-repeat;不重复*/
+    display:flex;  /*弹性布局*/
+    align-items:center;/*水平居中*/
+    justify-content:center;/*垂直居中*/
+    text-align: center;/*文本居中*/
+    color:white;
+}
+#bottom_txt h3{
+    font-size: 26px;
+}/*尾部图文间隙begin*/
+
+/*底部begin*/
+#footer{
+    width:60%;
+    position: relative;
+}
+#footer1{
+    top: 0em;
+    left: 0em;
+    height: 160px;
+    width:33%;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+}
+#footer1 a:hover{
+    color:#40e0d0;
+}
+
+
+#footer2{
+    top: 0em;
+    left:33%;
+    width:33%;
+    height: 160px;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+}
+#footer2 a:hover{
+    color:#40e0d0;
+}
+
+#footer3{
+    top: 0em;
+    width:33%;
+    height: 160px;
+    left: 66%;
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+}
+#footer3 a{
+    color: white;
+
+}
+#footer3 a:hover{
+    color:#40e0d0;
+}
+/*底部end*/
+

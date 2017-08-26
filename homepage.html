@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/homepage.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="main">
+    <!--导航begin-->
+    <div id="header">
+        <div id="head-txt"><span>D O M A N I</span></div>
+    </div>
+    <!--导航end-->
+
+    <!--轮播图begin-->
+    <div id="banner">
+        <div id="banner-text">
+            <div id="txt1"><h4>NEW ENGLAND AQUAREIUM</h4></div>
+            <div id="txt2"><h3>STEPHEN KING SHINES ON.</h3></div>
+        </div>
+        <div id="content">
+            <div id="img1"></div>
+            <video class="video" id="video1" autoplay="autoplay" loop="loop">
+                <source src="images/home_neaq.mp4">
+            </video>
+            <video class="video" id="video2"  autoplay="autoplay" loop="loop">
+                <source src="images/home_oribe.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="btn">
+            <input onclick="moveImge(0)" type="button" >
+            <input onclick="moveImge(1)" type="button">
+            <input onclick="moveImge(2)" type="button">
+        </div>
+    </div>
+
+    <!--轮播图end-->
+
+    <!--图文间隔部分begin-->
+    <div id="top_txt">
+        <div id="top_txt_image"></div>
+        <div id="top_txt_text">
+            <h1>IMAGINATION TO APPLICATION</h1><br>
+            <p>From empowering challenger brands to think big to<br> helping global brands feel closer to
+                home, we leverage<br> technology to bring people closer to the products, <br>
+                 content, and experiences they love.
+            </p>
+        </div>
+    </div>
+    <!--图文间隔部分end-->
+
+    <!--拼图begin-->
+    <div id="gridwrap">
+        <div id="bigdiv1">
+            <div id="inner1"></div>
+            <div id="smallbox1"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line1"></div>
+            <div id="line2"></div>
+        </div>
+        <div id="bigdiv2">
+            <div id="inner2"></div>
+            <div id="smallbox2"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line2-1"></div>
+            <div id="line2-2"></div>
+        </div>
+        <div id="bigdiv3">
+            <div id="inner3"></div>
+            <div id="smallbox3"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line3-1"></div>
+            <div id="line3-2"></div>
+        </div>
+        <div id="bigdiv4">
+            <div id="inner4"></div>
+            <div id="line4-1"></div>
+            <div id="line4-2"></div>
+        </div>
+        <div id="bigdiv5">
+            <div id="inner5"></div>
+            <div id="smallbox5"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line5-1"></div>
+            <div id="line5-2"></div>
+        </div>
+        <div id="bigdiv6">
+            <div id="inner6"></div>
+            <div id="smallbox6"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line6-1"></div>
+            <div id="line6-2"></div>
+        </div>
+        <div id="bigdiv7">
+            <div id="inner7"></div>
+            <div id="smallbox7"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line7-1"></div>
+            <div id="line7-2"></div>
+        </div>
+        <div id="bigdiv8">
+            <div id="inner8"></div>
+            <div id="smallbox8"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line8-1"></div>
+            <div id="line8-2"></div>
+        </div>
+        <div id="bigdiv9">
+            <div id="inner9"></div>
+            <div id="smallbox9"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line9-1"></div>
+            <div id="line9-2"></div>
+        </div>
+        <div id="bigdiv10">
+            <div id="inner10"></div>
+            <div id="smallbox10"><p class="smallbox-p">R+Co: A Brand is born</p></div>
+            <div id="line10-1"></div>
+            <div id="line10-2"></div>
+        </div>
+    </div>
+    <!--拼图end-->
+
+    <!--尾部begin-->
+    <div id="bottom_txt">
+        <div id="bottom_txt_text">
+            <h3>MIKE.WORK.PLAY<br></h3><br><h2>SINCE &nbsp;2001</h2><br>
+            <p>
+                With an award winning 15 year track record,
+                DOMANI has been recognized as one of the top digital agencies in business tody.
+                <br>
+                "We help brands around the world express themselves and collaboratively connect with their audiences
+            </p>
+        </div>
+    </div>
+    <!--尾部end-->
+
+    <div id="footer">
+            <div id="footer1"><a><h3>D O M A N I</h3></a><h3><a>f</a>&nbsp;<a>✈</a>&nbsp;<a>in</a> &nbsp;<a>☬</a></h3><br><br><a>©</a> 2015 Dimani Studios LLC.</div>
+            <div id="footer2"><h3>WALK</h3><br><a>32 Avenue of the Amenricas<br>19th Floor<br>New York,NY10013<br>View on Map></a></div>
+            <div id="footer3"><h3>TALK</h3><br>New Biz:<a href="#"><span>hello@domanistudios.com</span></a><br>
+                General:<a href="#" >hello@domanistudios.com</a><br>
+                Careers:<a href="#">workwithus@domanistudios.com</a><br>
+                Phone:<a>646-744-3501</a>/ Fax:<a>212-242-4112</a>
+            </div>
+    </div>
+
+<>
+</body>
+<script type="text/javascript">
+    function moveImge(pos){
+        var left = -pos*1349;
+        var imgEle = document.getElementById("content");
+        imgEle.style.marginLeft = left+"px";
+    }
+
+</script>
+</html>
